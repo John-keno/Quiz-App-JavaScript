@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Quiz App</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Demo Quiz App</title>
+	</head>
+	<body>
+		<div class="card" id="quiz">
+			<h2>Quiz</h2>
+			<div class="card-content" id="quiz-content">
+				<div class="intro" id="intro">
+					<p>Test your knowledge of Linux OS</p>
+					<h3>Instructions</h3>
+					<ul>
+						<li>There are 10 questions in this quiz</li>
+						<li>Each question has 4 options</li>
+						<li>Choose the correct option</li>
+						<li>Click on the Start Quiz button to begin</li>
+					</ul>
+					<button id="start">Start Quiz</button>
+				</div>
+				<div id="quiz-box">
+					<h3 class="question" id="question"></h3>
+					<div class="choice" id="choices"></div>
+					<p class="footer" id="progress"></p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
